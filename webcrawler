@@ -10,7 +10,7 @@ class LinkParser(HTMLParser):
     # but we are adding some functionality to it
     def handle_starttag(self, tag, attrs):
         # We are looking for the begining of a link. Links normally look
-        # like <a href="www.someurl.com"></a>
+        # like <a href="www.Fish-url.com"></a>
         if tag == 'a':
             for (key, value) in attrs:
                 if key == 'href':
